@@ -1,0 +1,17 @@
+.aboutCards{
+    width: 100%;
+    min-height:320px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+@media screen and (max-width:1100px) {
+  .aboutCards{
+    margin-top: 2rem;
+    justify-content: space-evenly;
+
+  }
+}

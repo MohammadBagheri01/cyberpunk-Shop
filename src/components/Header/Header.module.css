@@ -1,0 +1,39 @@
+.container{
+    width: 95%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.sideBar{
+    position: fixed;
+    bottom: 50%;
+    transform: translateY(50%);
+    left: 3rem;
+    height: 75vh;
+    width: 90px;
+    transition: all .3s;
+    z-index: 99;
+}
+.header{
+width: calc(100% - 90px - 3rem);
+min-height: 100vh;
+}
+
+@media screen and (max-width:780px) {
+    .header{
+        width: 100%;
+    }
+    .sideBar {
+        width: 100%;
+        bottom: 0;
+        transform: translateY(0);
+        left: 0;
+        height: 60px;
+
+    }
+}
+
+@media screen and (max-width:990px){
+}

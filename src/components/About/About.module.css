@@ -1,0 +1,55 @@
+.aboutUs{
+width: 100%;
+
+margin: 2rem 0;
+}
+.about_container{
+width: 80%;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 1rem;
+padding: 0 1rem;
+}
+.about_bannerContainer{
+    width: 100%;
+    height: 90vh;
+    border-radius: 40px;
+
+
+}
+.about_cardsContainer{
+    width: 44%;
+    margin: 20vh 0;
+}
+.about_textContainer{
+    width: 54%;
+    margin: 20vh 0;
+
+}
+.about_info{
+    width: 100%;
+    min-height: 100vh;
+}
+
+@media screen and (max-width:1100px){
+  .about_cardsContainer{
+    width: 100%;
+}
+.about_textContainer{
+    width:100%;
+
+}
+}
+@media screen and (max-width:780px){
+    .about_container{
+        width: 90%;
+    }
+}
+@media screen and (max-width:560px){
+     .about_container{
+        width: 95%;
+    }
+}

@@ -1,0 +1,19 @@
+.info_list{
+    list-style:'→';
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.info_item{
+cursor: pointer;
+padding: .5rem;
+font-family: roboto;
+transition: .3s ;
+color: #f5f5f5;
+}
+.info_item:hover{
+    transform: translateY(-10px);
+}

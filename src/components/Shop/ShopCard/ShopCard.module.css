@@ -1,0 +1,136 @@
+.shopCardContainer {
+    width: 200px;
+    height: 270px;
+    position: relative;
+    cursor: pointer;
+}
+
+.shopCard {
+    width: 200px;
+    height: 270px;
+    background-color: #039c76;
+    clip-path: path("M 10,0 L 130,0 A 10,10 0,0,1 140,10 L 140,50 A 20,20 0,0,0 160,70 L 190,60 A 10,10 0,0,1 200,70 L 200,230 L 71,240 L 60,270 L 10,270 A 10,10 0,0,1 0,260 L 0,10 A 10,10 0,0,1 10,0 Z");
+}
+
+.card_offBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    aspect-ratio: 1/1;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    outline: 0;
+    background-color: rgb(214, 0, 0);
+    color: #fff;
+    font-family: anton;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.card_offBtn:hover {
+    transform: translateY(-5px);
+}
+
+.card_img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.card_img img {
+    height: 100%;
+    width: 100%;
+}
+
+.card_title {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card_title::after,
+.card_title::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 0%;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    transition: all .2s;
+}
+
+.card_title::before {
+    top: 0;
+}
+
+.card_title::after {
+    bottom: 0;
+}
+
+.shopCardContainer:hover .card_title::after,
+.shopCardContainer:hover .card_title::before {
+    height: 50%;
+}
+
+.card_title h3 {
+    font-size: 2rem;
+    color: #f5f5f5;
+    transition-delay: 1s;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all .5s;
+    z-index: 1;
+    font-family: roboto;
+}
+
+.shopCardContainer:hover .card_title h3 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card_btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 140px;
+    height: 40px;
+    border: 0;
+    background-color: #07191b;
+    color: #f5f5f5;
+    border-bottom-right-radius: 10px;
+    clip-path: path("M 13,13 L 140,4 L 140,40 L 4,40  Z");
+    text-align: end;
+    padding-top: 1rem;
+    padding-right: 50px;
+    cursor: pointer;
+}
+.card_btn::after{
+    content: '';
+  position: absolute;
+  top: 0;
+  left: -75%; 
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.8),
+    transparent
+  );
+  transform: skewX(-25deg);
+  transition: 0.7s;
+}
+.card_btn:hover::after{
+  left: 125%; 
+}

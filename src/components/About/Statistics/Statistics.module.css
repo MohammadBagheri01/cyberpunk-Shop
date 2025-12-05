@@ -1,0 +1,12 @@
+.Statistics{
+display: flex;
+align-items: start;
+justify-content: center;
+gap: .5rem;
+}
+.Statistics_item{
+font-size: 18px;
+color: #1c0b5a;
+font-family: robotoItalic;
+user-select: none;
+}
